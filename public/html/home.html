@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="/public/css/home.css">
+</head>
+<body>
+    <canvas id="myCanvas" width="1920" height="1080">您的浏览器不支持 CANVAS</canvas>
+    <div class="search-bar">
+        <input type="text" name="search">
+        <button id="search">搜索</button>
+        <ul id="resultList"></ul>
+    </div>
+    <div class="weather-container">
+        <h3>武汉</h3>
+        <div class="citys-box sl_relative">
+            <div class="citys-list">
+                <select name="province" id="province"></select>
+                <select name="city" id="city"></select>
+                <button id="submit-city">确定</button>
+                <button id="cancel-city">取消</button>
+            </div>
+            <div class="toggle-city">切换城市</div>
+        </div>
+        <div class="weather-forecast sl_clear">
+            <div class="weather-item weather-today">
+                <div class="time"></div>
+                <a href="https://www.baidu.com/s?ie=UTF-8&wd=天气" target="_blank"><div class="weather-img"></div></a>
+                <div class="temperature"></div>
+                <div class="wind_dir"></div>
+                <div class="wind_sc"></div>
+            </div>
+            <div class="weather-item weather-todmorrow">
+                <div class="time"></div>
+                <a href="https://www.baidu.com/s?ie=UTF-8&wd=天气" target="_blank"><div class="weather-img"></div></a>
+                <div class="temperature"></div>
+                <div class="wind_dir"></div>
+                <div class="wind_sc"></div>
+            </div>
+            <div class="weather-item weather-after_tomorrow">
+                <div class="time"></div>
+                <a href="https://www.baidu.com/s?ie=UTF-8&wd=天气" target="_blank"><div class="weather-img"></div></a>
+                <div class="temperature"></div>
+                <div class="wind_dir"></div>
+                <div class="wind_sc"></div>
+            </div>
+        </div>
+        <div class="weather-control">
+            天气
+        </div>
+    </div>
+<!-- <script src="/public/data/city.js"></script> -->
+<script src="/public/component/BgTransition.js"></script>
+<script src="/public/js/home.js"></script>
+</body>
+</html>
