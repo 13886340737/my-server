@@ -28,14 +28,14 @@ let tavern = {},
     cityData = {},
     // 天气接口配置
     options = {
-        // location: 'auto_ip',
-        location: '武汉市',
+        location: 'auto_ip',
+        // location: '武汉市',
         key: '8104356a22b848f98c3a06bc105ecccf',
     };
 function getCityData(){
     return new Promise((resolve,reject)=>{
         ajax({  
-            url : `http://127.0.0.1:3000/cityData`,  // url---->地址  
+            url : `http://119.23.67.115:80/cityData`,  // url---->地址  
             type : "GET",   // type ---> 请求方式  
             async : true,   // async----> 同步：false，异步：true 
             data : 0,

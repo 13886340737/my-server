@@ -21,8 +21,8 @@ app.use(allowCrossDomain);
 http://localhost:3000/images/kitten.jpg
 */
 // app.use('/static',express.static('public'));
-app.use('/public',express.static('public'));
-// app.use(express.static(path.join(__dirname, 'public')))
+// app.use('/public',express.static('public'));
+ app.use('/public',express.static(path.join(__dirname, 'public')))
 // var birds = require('./router/birds');
 // app.use('/birds', birds);
 app.get('/',function(req,res){
@@ -43,7 +43,7 @@ app.get('/cityData',function(req,res){
 app.get('*',function(req, res) {
     res.status(404).send('Sorry cant find that!');
   });
-var server = app.listen(3000, function () {
+var server = app.listen(80, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
